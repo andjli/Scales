@@ -4,8 +4,8 @@ void setup(){
 }
 void draw(){
   boolean shift = true;
-  for(int y = 0; y < 1000; y+=40){
-    for(int x = 0; x < 1000; x+=30){
+  for(int y = -20; y < 1000; y+=40){
+    for(int x = -20; x < 1000; x+=30){
       if(shift == true)
         scale(x+25,y);
       else
