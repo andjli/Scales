@@ -1,11 +1,11 @@
 void setup(){
-  size(1000,1000);
+  size(500,500);
   noLoop();
 }
 void draw(){
   boolean shift = true;
-  for(int y = -20; y < 1000; y+=40){
-    for(int x = -20; x < 1000; x+=30){
+  for(int y = -20; y < 500; y+=40){
+    for(int x = -20; x < 500; x+=30){
       if(shift == true)
         scale(x+25,y);
       else
@@ -19,7 +19,7 @@ void draw(){
 }
 
 void scale(int x, int y){
-  fill(#DB2CD9);
+  fill((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
   beginShape();
   curveVertex(x,y);
   curveVertex(x,y);
