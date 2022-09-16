@@ -4,8 +4,8 @@ void setup(){
 }
 void draw(){
   boolean shift = true;
-  for(int y = -20; y < 500; y+=40){
-    for(int x = -20; x < 500; x+=30){
+  for(int y = -20; y < 500; y+=17.5){
+    for(int x = -20; x < 500; x+=17.5){
       if(shift == true)
         scale(x+25,y);
       else
@@ -19,6 +19,7 @@ void draw(){
 }
 
 void scale(int x, int y){
+  noStroke();
   fill((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
   beginShape();
   curveVertex(x,y);
@@ -28,4 +29,3 @@ void scale(int x, int y){
   curveVertex(x+25,y+60);  
   endShape();
 }
-
